@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <title>Отправка формы</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="form">
+            <form action="#" id="form" class="form_body">
+                <h1 class="form_title">Отправка данных на почту</h1>
+                <div class="form_item">
+                    <label for="formName" class="form_label">Имя*</label>
+                    <input id="formName" type="text" name="name" class="form_input _req">
+                </div>
+                <div class="form_item">
+                    <label for="formPhone" class="form_label">Телефон*</label>
+                    <input id="formPhone" type="tel" name="tel" class="form_input _req">
+                </div>
+                <div class="form_item">
+                    <label for="formEmail" class="form_label">Email*</label>
+                    <input id="formEmail" type="text" name="email" class="form_input _req _email">
+                </div>
+                <div class="form_item">
+                    <div class="form_label">Выбор один или два?</div>
+                    <div class="option">
+                        <div class="option_item">
+                            <input id="formRightHandet" checked type="radio" value="right" name="hand"
+                                class="option_input">
+                            <label for="formRightHandet" class="option_label"><span> Один </span></label>
+                        </div>
+                        <div class="option_item">
+                            <input id="formLeftHandet" type="radio" value="left" name="hand" class="option_input">
+                            <label for="formLeftHandet" class="option_label"><span> Два </span></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form_item">
+                    <label for="formMessage" class="form_label">Сообщение:</label>
+                    <textarea name="message" id="formMessage" class="form_input"></textarea>
+                </div>
+                <div class="form_item">
+                    <div class="form_label">Возраст:</div>
+                    <select name="age" class="select">
+                        <option value="от 18 до 25">Молодой</option>
+                        <option value="от 25 до 45">Взрослый</option>
+                        <option value="от 45 ">Старый</option>
+                    </select>
+                </div>
+                <div class="form_item">
+                    <div class="form_label">Прикрепить файл</div>
+                    <div class="file">
+                        <div class="file_item">
+                            <input id="formImage" accept=".jpg, .png, .gif" type="file" name="image" class="file_input">
+                            <div class="file_button">Выбрать</div>
+                        </div>
+                        <div id="formPreview" class="file_preview"></div>
+                    </div>
+                </div>
+                <div class="form_item">
+                    <div class="checkbox">
+                        <input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox_input">
+                        <label for="formAgreement" class="checkbox_label _req"></label>
+                        <span>Настоящим я, являясь посетителем/пользователем сайтов https://www.glavstroy.ru/,
+                            http://beregovoy-kvartal.ru и личных кабинетов указанных сайтов (далее по тексту Сайт),
+                            предоставляю юридическому лицу - Обществу с ограниченной ответственностью «Главстрой»
+                            (сокращенное наименование - ООО «Главстрой», ОГРН 1217700167299, ИНН 9704059247, КПП
+                            770401001, адрес: 119019, Москва, Пречистенская набережная, д. 45/1, стр. 1, эт. 3,
+                            помещение I, комната 32) (далее по тексту – Оператор) согласие на обработку моих
+                            персональных данных (далее по тексту — Согласие) на нижеизложенных условиях и подтверждаю,
+                            что давая настоящее Согласие, я действую своей волей и в своём интересе. 
+                        </span>
+                    </div>
+                </div>
+                <button type="submit" class="form_button">Отправить</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
